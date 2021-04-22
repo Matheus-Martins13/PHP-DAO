@@ -8,32 +8,33 @@ class Usuario {
     private $dessenha;
     private $dtcadastro;
 
-    public function setIdUsuario($id) {
-        $this->idusuario = $id;
+    
+    public function setIdUsuario($value) {
+        $this->idusuario = $value;
     }
 
     public function getIdUsuario() {
         return $this->idusuario;
     }
 
-    public function setDesLogin($deslogin) {
-        $this->deslogin = $deslogin;
+    public function setDesLogin($value) {
+        $this->deslogin = $value;
     }
 
     public function getDesLogin() {
         return $this->deslogin;
     }
 
-    public function setDesSenha($dessenha) {
-        $this->dessenha = $dessenha;
+    public function setDesSenha($value) {
+        $this->dessenha = $value;
     }
 
     public function getDesSenha() {
         return $this->dessenha;
     }
 
-    public function SetDtCadastro($dtcadastro) {
-        $this->dtcadastro= $dtcadastro;
+    public function setDtCadastro($value) {
+        $this->dtcadastro= $$value;
     }
 
     public function getDtCadastro() {
@@ -64,7 +65,7 @@ class Usuario {
             "idusuario"=>$this->getIdUsuario,
             "deslogin"=>$this->getDesLogin,
             "dessenha"=>$this->getDesSenha,
-            "dtcadastro"=>$this->getDtCadastro->format("d/n/Y H:i:s")
+            "dtcadastro"=>$this->getDtCadastro //->format("d/n/Y H:i:s") -> Conflitante
         ));
     }
 
