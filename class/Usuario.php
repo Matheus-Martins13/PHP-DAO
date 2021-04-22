@@ -34,7 +34,7 @@ class Usuario {
     }
 
     public function setDtCadastro($value) {
-        $this->dtcadastro= $$value;
+        $this->dtcadastro= $value;
     }
 
     public function getDtCadastro() {
